@@ -1,3 +1,34 @@
 body{
-    background-color: black;
+    margin: 0px;
+    height: 100vh;
+    /* background-color: black; */
+    /* background:url('https://www.boredpanda.com/blog/wp-content/uploads/2023/07/ART-1382-21-64a59cfd490cd__700.jpg'); */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+}
+span{
+    background: url('https://cdn4.iconfinder.com/data/icons/twitter-29/512/166_Heart_Love_Like_Twitter-512.png');
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    pointer-events: none;
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: animate 6s linear;
+}
+
+@keyframes animate {
+    0%{
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+    100%{
+        transform: translate(-50%, -5000%);
+        opacity: 0;
+        /* increase the deg to change the color */
+        filter: hue-rotate(600deg);
+    }
 }
