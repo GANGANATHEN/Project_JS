@@ -1,0 +1,41 @@
+body{
+    margin: 0px;
+    background-color: pink;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+}
+.text-container{
+    background-color: salmon;
+    padding: 20px;
+    border-radius: 24px;
+    align-items: center;
+    text-align: center;
+}
+.text-area{
+    width:400px;
+    height: 100px;
+    border-color: aqua;
+    color: rgb(168, 52, 2);
+    font-size: 18px;
+    font-family: monospace;
+    border-radius: 14px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 3px solid darkgray;
+}
+.counters{
+    display: flex;
+    justify-content: space-between;
+}
+.counters p{
+    color: lightblue;
+}
+.counters p:first-child span{
+    color: rgb(4, 111, 182);
+}
+.counters p:last-child span{
+    color: rgb(93, 0, 180);
+}
