@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gree N</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loan-container">
+        <h1>Loan Calculator</h1>
+        <p>Loan Amount ₹
+            <input onchange="calculateLoan()" type="number" name="" class="input" id="loan-amount" min="1" max="500000" value="10000">
+        </p>
+        <p>Rate %
+            <input onchange="calculateLoan()" type="number" name="" class="input" id="interest-rate" min="0" max="100" value="10" step=".1">
+        </p>
+        <p>Month to pay
+            <input onchange="calculateLoan()" type="number" name="" class="input" id="months-to-pay" min="6" max="48" value="12">
+        </p>
+        <p class="Payment" id="payment">Monthly Payment :</p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: pink;
+}
+.loan-container{
+    backdrop-filter: brightness(.9);
+    color: aliceblue;
+    padding: 20px;
+    border-radius: 24px;
+}
+.input{
+    width:100%;
+    font-size: 20px;
+    height: 30px;
+}
+.Payment{
+    font-weight: 600;
+    font-size: 20px;
+}
