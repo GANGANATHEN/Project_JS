@@ -1,0 +1,43 @@
+body{
+    background-color: palevioletred;
+}
+.container{
+    margin: 0px auto;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+}
+.title{
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: rgb(225, 250, 215);
+}
+.timer{
+    font-size: 72px;
+    color: aqua;
+}
+button{
+    font-size: 18px;
+    padding: 10px 20px;
+    margin:10px;
+    color: #fff;
+    border-radius: 12px;
+    border:none;
+    transition-duration: .6s;
+}
+button:hover{
+    box-shadow: 4px 8px 2px 0px rgb(0, 0,5,.3);
+}
+button:active{
+    box-shadow: 4px 8px 2px 7px rgb(0, 0,5,.3);
+}
+#start{
+    background-color: rgb(6, 199, 135);
+}
+#stop{
+    background-color: orchid;
+}
+#reset{
+    background-color: pink;
+}
