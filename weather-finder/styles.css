@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    margin: 50px auto;
+    background-color: hotpink;
+    padding: 50px;
+    max-width: 400px;
+    height: 80vh;
+    border-radius: 24px;
+    color: aliceblue;
+}
+input[type="text"]{
+    margin-top: 10px;
+    height: 2rem;
+    border: 2px salmon;
+    border-radius: 12px;
+}
