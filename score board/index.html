@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Board</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 class="center">still going rework</h1>
+
+    <!-- team score boards start  -->
+
+    <div class="team-scores">
+        <h1>Team Scores</h1>
+        <div>
+           <div class="team-1score">
+                 <h4>team 1</h4>
+                 <h5>30</h5>
+                 <h5>333.0</h5>
+                 <h5>6</h5>
+           </div>
+           <div class="team-1score">
+                <h4>team 2</h4>
+                <h5>26</h5>
+                <h5>273.0</h5>
+                <h5>4</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- team score boards end -->
+
+    <!-- Toss Decision start -->
+
+    <div class="toss tss-1" id="tos">
+        <h1 class="head">Toss Decision</h1>
+        <h3 class="red-col" id="enter-balls"></h3>
+        <div>
+            <label for="">Enter No.of Balls</label>
+            <input type="number" id="b-count" name="" placeholder="choose no.of balls" value="">
+        </div>
+        <p class="yellow-col" id="result">Click the toss button to start your game</p>
+        <button style="display: block; margin-top: 20px;" onclick="toss()">Toss</button>
+    </div>
+
+    <!--(Second) Choose Bat or Bowl
+
+    <div class="win-container">
+        <h3 class="bat-bowl">Choose Bat or Bowl</h3>
+        <h4 id="toss-result"></h4>
+        <div class="check-box">
+            <div>
+                <input type="checkbox" id="box-1">
+                <label for="box-1">Batting</label>
+            </div>
+            <div>
+                <input type="checkbox" id="box-2">
+                <label for="box-2">Bowling</label>
+            </div>
+        </div>
+        <button onclick="makeDecision()">Decision</button>
+    </div>
+
+    <!-- Toss Decision end -->
+
+    <!-- Teams start-->
+    <div class="center-1">
+        <p id="display-toss-win"></p>
+    </div>
+
+    <div class="container">
+        <div class="team-1">
+            <h1>Team 1</h1>
+            <h3 id="ds-1">Display Score</h3> <!-- Display Score -->
+            <div>
+                <button id="btn-1" onclick="butt1()">+1</button>
+                <button id="btn-2" onclick="butt2()">+4</button>
+                <button id="btn-3" onclick="butt3()">+6</button>
+                <p id="total-balls">Total Ball count</p> <!-- Total Ball count -->
+                <p id="show">Current Ball Count</p> <!--Current Ball Count -->
+                <p class="Game-Over">Your Game is Over</p>
+                <h1 class="total1">Total Score</h1> <!--Total Score -->
+            </div>
+            <button class="btn-t1" id="btn-t1" onclick="team1result()">Next battle</button>
+        </div>
+
+        <div class="team-2">
+            <h1>Team 2</h1>
+            <h3 id="ds-2">Display Score</h3> <!-- Display Score -->
+            <div>
+                <button id="btn-4" onclick="butt4()">+1</button>
+                <button id="btn-5" onclick="butt5()">+4</button>
+                <button id="btn-6" onclick="butt6()">+6</button>
+                <p id="total-balls1">Total Ball count</p> <!-- Total Ball count -->
+                <p id="show1">Current Ball Count</p> <!-- Current Ball Count -->
+                <p class="Game-Over1">Your Game is Over</p>
+                <h1 class="total2">Total Score</h1> <!--Total Score -->
+            </div>
+            <button class="btn-t2" id="btn-t2" onclick="team2result()">Next battle</button>
+        </div>
+    </div>
+    
+    <div class="final-container">
+        <h3>Match Result</h3>
+        <h1 class="finalresult" id="demo">23</h1>
+        <button class="btn-rematch" onclick="rematch()">Re-match</button>
+    </div>
+
+    <!-- Teams end-->
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

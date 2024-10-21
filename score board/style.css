@@ -1,0 +1,135 @@
+body{
+    background-color: rgb(220, 245, 238);
+    /* overflow: hidden; */
+}
+.head{
+    margin: 0px;
+}
+.red-col{
+    color: red;
+}
+.yellow-col{
+    color: rgb(120, 5, 222);
+}
+.center{
+    text-align: center;
+    color: rgb(203, 69, 21);
+    text-decoration: line-through rgb(0, 231, 252);
+}
+.center-1{
+    text-align: center;
+    color: rgb(203, 69, 21);
+    display: none;
+}
+.container{
+    width: 600px;
+    margin: 20vh auto 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.win-container{
+    display: none;
+    text-align: center;
+}
+.win-container button{
+    margin-top: 20px;
+}
+.check-box{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.check-box div:first-child{
+    margin-right: 20px;
+}
+.team-1 , .team-2{
+    background-color: rgb(255, 196, 196);
+    padding: 60px;
+    border-radius: 22px;
+}
+.Game-Over,.Game-Over1{
+    display: none;
+}
+.btn-t1{
+    display: none;
+}
+.btn-t2{
+    display: none;
+}
+.team-1{
+    display: none;
+}
+.team-2{
+    display: none;
+}
+.toss{
+    display: block;
+}
+.tss-1{
+    margin: 10px 5%;
+    background-color: azure;
+    text-align: center;
+    padding: 20px;
+    border-style: double;
+    border-radius: 22px;
+    align-items: center;
+}
+.tss-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+button{
+    padding: 5px 10px;
+    color: #ffff;
+    background-color: red;
+    border-radius: 7px;
+    border: 1px solid red;
+}
+button:hover{
+    color: #ffff;
+    background-color: rgb(215, 112, 112);
+    border-radius: 7px;
+    border: 1px solid rgb(215, 112, 112);
+}
+button:active{
+    color: #ffff;
+    background-color: rgba(255, 0, 0, 0.559);
+    border-radius: 7px;
+    border: 1px solid rgba(255, 0, 0, 0.559);
+}
+.bat-bowl{
+    display: block;
+}
+.final-container{
+    margin: 10px 5%;
+    background-color: azure;
+    text-align: center;
+    padding: 20px;
+    border-style: double;
+    border-radius: 22px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+}
+.team-scores{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.team-1score{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:50px;
+  margin-top: -30px;
+}
