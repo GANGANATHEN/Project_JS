@@ -23,3 +23,12 @@ input[type="text"]{
     border: 2px salmon;
     border-radius: 12px;
 }
+button{
+    background-color: bisque;
+    border-radius: 8px;
+    border: 2px salmon;
+    padding: 7px 8px;
+}
+button:active{
+    background-color: rgb(241, 185, 179);
+}
