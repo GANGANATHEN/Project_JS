@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+body{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    /* height: 400vh; */
+    background-color: rgb(243, 197, 243);
+}
+header{
+    text-align: center;
+    background-color: pink;
+    padding: 20px;
+    width: 100%;
+    color: aliceblue;
+}
+section{
+    background-color: rgb(233, 204, 242);
+    padding: 50px;
+}
+.btn-add{
+    background-color: rgb(64, 233, 3);
+    color: aliceblue;
+    padding: 7px 5px;
+    border: none;
+    border-radius: 7px;
+    margin: auto 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-add:active{
+    background-color: rgb(46, 161, 5);
+}
+.btn-delete{
+    background-color: rgb(237, 72, 72);
+    color: aliceblue;
+    padding: 7px 5px;
+    border: none;
+    border-radius: 7px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-delete:active{
+    background-color: rgb(233, 22, 3);
+}
+.iText{
+    color: rgb(255, 0, 144);
+    background-color: rgb(243, 244, 241);
+    width: 300px;
+    height: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+.li{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(206, 196, 255);
+    margin: 10px auto;
+    border-radius: 9px;
+    padding: 7px;
+}

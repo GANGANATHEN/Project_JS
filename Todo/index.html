@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gree N</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <Header>
+        <h1>ToDo</h1>
+    </Header>
+    <section>
+        <div>
+            <input type="text" name="T-text" class="iText" id="input-text">
+            <button type="submit" id="btnAdd" class="btn-add" onclick="addList()">Add</button>
+            <button class="btn-delete" id="deleteAll">Remove All</button>
+            <ul id="ul">
+                <!-- dynamically add list items -->
+            </ul>
+        </div>
+        
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
