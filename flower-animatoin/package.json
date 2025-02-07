@@ -1,0 +1,18 @@
+{
+  "name": "flower-animatoin",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "three": "^0.173.0",
+    "tween.js": "^16.6.0",
+    "vite": "^6.1.0"
+  }
+}
