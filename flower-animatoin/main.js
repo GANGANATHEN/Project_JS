@@ -1,15 +1,14 @@
 import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import { OrbitControls } from './OrbitControls.js'; // Correct import path (relative)
 import TWEEN from 'tween.js';
 
-// Scene, Camera, Renderer
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
-const controls = new OrbitControls(camera, renderer.domElement);
+const controls = new OrbitControls(camera, renderer.domElement);  // Now works correctly
 
 // Lighting
 const ambientLight = new THREE.AmbientLight(0x404040);
@@ -18,7 +17,7 @@ const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
 directionalLight.position.set(5, 5, 5).normalize();
 scene.add(directionalLight);
 
-// Rose Petals (Correct Way to use ParametricGeometry)
+// Rose Petals
 function createPetalShape(u, v) {
     const scale = 0.8;
     const radius = 1;
@@ -29,7 +28,7 @@ function createPetalShape(u, v) {
     return new THREE.Vector3(x, y, z);
 }
 
-const petalGeometry = new THREE.ParametricGeometry(createPetalShape, 32, 32); // Correct
+const petalGeometry = new THREE.ParametricGeometry(createPetalShape, 32, 32);
 const petalMaterial = new THREE.MeshPhongMaterial({
     color: 0xff69b4,
     flatShading: false,

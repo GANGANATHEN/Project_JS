@@ -1,14 +1,16 @@
 import { defineConfig } from 'vite';
+import path from 'path';
 
 export default defineConfig({
     resolve: {
         alias: {
-            'three': 'three/build/three.module.js'
+            'three': path.resolve(__dirname, 'node_modules/three/build/three.module.js'),
+            'three/examples/jsm/controls/OrbitControls': path.resolve(__dirname, 'node_modules/three/examples/jsm/controls/OrbitControls.js') // Correct path!
         }
     },
-    build: { // This is the VERY IMPORTANT part for OrbitControls
+    build: {
         commonjsOptions: {
-            transformMixedEsModules: true  // Essential for OrbitControls
+            transformMixedEsModules: true
         }
     }
 });
