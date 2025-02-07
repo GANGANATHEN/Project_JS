@@ -1,59 +1,55 @@
-const ulItems = document.getElementById("ul")
-const inputText = document.getElementById("input-text")
-const addBtn = document.getElementById("btnAdd")
-const deleteBtn = document.getElementById("deleteButton")
-const deleteAllBtn = document.getElementById("deleteAll")
+const taskInput = document.getElementById("taskInput");
+const addTaskBtn = document.getElementById("addTaskBtn");
+const todoList = document.getElementById("todoList");
 
+// Add task function
+function addTask() {
+    const taskText = taskInput.value.trim();
 
-function addList(){
+    if (taskText === "") {
+        alert("Please enter a task.");
+        return;
+    }
 
-    if (inputText.value !== "") {
-        // Get the <ul> element
-        const newDiv = document.createElement('div');
+    // Create a new <li> element
+    const taskItem = document.createElement("li");
 
-        //add class in <div>
-        newDiv.classList.add('li');
+    // Add task text
+    const taskTextElement = document.createElement("span");
+    taskTextElement.textContent = taskText;
 
-        //append <div> in <ul> element
-        ulItems.appendChild(newDiv)
+    // Add 'Complete' toggle functionality
+    taskTextElement.addEventListener("click", () => {
+        taskTextElement.classList.toggle("completed");
+    });
 
-        // Create a new <li> element
-        const newList = document.createElement('li');
+    // Add a delete button
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "Delete";
+    deleteBtn.classList.add("delete-btn");
 
-        // Set the text of the new <li> to the input value
-        newList.textContent = inputText.value;
+    // Add delete functionality
+    deleteBtn.addEventListener("click", () => {
+        todoList.removeChild(taskItem);
+    });
 
-        // Append the new <li> to the <div>
-        newDiv.appendChild(newList);
+    // Append task text and delete button to <li>
+    taskItem.appendChild(taskTextElement);
+    taskItem.appendChild(deleteBtn);
 
-        // Create a new <button> element
-        const newBtn = document.createElement('button')
+    // Add the <li> to the <ul>
+    todoList.appendChild(taskItem);
 
-        // Append the new <button> to the <div>
-        newDiv.appendChild(newBtn);
-
-        //add class in <button>
-        newBtn.classList.add('btn-delete')
-
-        //add id in <button>
-        newBtn.setAttribute("id", "deleteButton");
-
-        //set Attribute in button
-        // newBtn.setAttribute("onclick", "delList(1)");
-
-        //inner Text
-        newBtn.innerText = 'Delete (this button not developed yet)';
-
-        // Clear the input field
-        document.getElementById("input-text").value = "";
-
-      } else {
-        alert("Please enter a valid item.");
-      }
-    
+    // Clear the input field
+    taskInput.value = "";
 }
 
-deleteAllBtn.addEventListener("click", function () {
-    ulItems.innerHTML = "";
-});
+// Add event listener to the "Add" button
+addTaskBtn.addEventListener("click", addTask);
 
+// Allow adding task by pressing "Enter"
+taskInput.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+        addTask();
+    }
+});
